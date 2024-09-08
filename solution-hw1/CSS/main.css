@@ -78,6 +78,27 @@ hr.line {
 }
   
 
+.button {
+  background-color: yellow;
+  border-style: solid; 
+  border-color: black;
+  color: black;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.caption {
+  padding: 10px 0px;
+  display: block;
+  text-align: center;  
+} 
+
+
+
 /* Pulled from online W3/Forums as examples - could not get to work
 .effect {
   border-style: solid;
@@ -151,19 +172,6 @@ hr.line {
   border-width: 20px; */
 
 
-.button {
-  background-color: yellow;
-  border-style: solid; 
-  border-color: black;
-  color: black;
-  padding: 10px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  font-weight: bold;
-}
-
 /* .flex-container {
   display: flex;
   flex-direction: column;
@@ -179,12 +187,8 @@ img.details {
   width: 600px;
   height: 600px;
 } */
-.caption {
-  padding: 10px 0px;
-  display: block;
-  text-align: center;  
 
-} 
+
 /* Ask TA - Need help getting aligned left in center */
 
 
