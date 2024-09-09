@@ -60,6 +60,8 @@ p { background-color:#FFFFFF; }
 
 a:link { 
   text-decoration: none; 
+  color: black;
+
 } 
 a:visited { 
   text-decoration: none; 
@@ -67,10 +69,13 @@ a:visited {
 } 
 a:hover { 
 text-decoration: none; 
+color: black;
+
 
 } 
 a:active { 
-  text-decoration: none; 
+  text-decoration: none;
+ 
 } 
 
 hr.line {
