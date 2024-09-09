@@ -71,11 +71,11 @@ a:hover {
 text-decoration: none; 
 color: black;
 
-
 } 
 a:active { 
   text-decoration: none;
- 
+  color: black;
+
 } 
 
 hr.line {
