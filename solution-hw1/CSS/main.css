@@ -46,7 +46,8 @@ div.a {
 }
 
 .Bunlogo {
-  width: 400px; 
+  width: 400px;
+  text-align: left; 
 }
 
 /* .RemoveButton {
