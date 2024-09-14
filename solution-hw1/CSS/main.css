@@ -18,12 +18,19 @@ mark {
    background-color: yellow;
 }
 
+
+
+
 .pgimage {
   width: 400px; 
   height: 400px;
   border-style: solid; 
   border-color: black;
  }
+
+ /* .img-text {
+  margin-left: 10px; 
+} not working (yet)*/
 
 .detailsimage {
   width: 600px; 
@@ -57,6 +64,34 @@ div.a {
   font-size: small;
 } */
 
+
+/* unvisited link */
+a:link {
+  color: black;
+  text-decoration: none; 
+}
+
+/* visited link */
+a:visited {
+  color: black;
+  text-decoration: none; 
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+  font-weight:bold;
+  text-decoration: solid;
+  background-color:yellow;
+}
+
+/* selected link */
+a:active {
+  color: black;
+  text-decoration: none; 
+}
+
+/* 
 .highlightme { background-color:#FFFF00; }
 p { background-color:#FFFFFF; }
 
@@ -78,7 +113,7 @@ a:active {
   text-decoration: none;
   color: black;
 
-} 
+}  */
 
 hr.line {
   width: 50%;
