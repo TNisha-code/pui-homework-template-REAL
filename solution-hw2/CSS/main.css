@@ -262,7 +262,7 @@ hr.line {
 }
 
 
-/* Flex for cart PAGE & Shopping */
+/* Flex for cart PAGE */
 .flex-CartPage {
   display: flex;
   flex-wrap: wrap;
@@ -285,21 +285,44 @@ hr.line {
 
 /* Flex for Shopping PAGE */
 
-/* .flex-ShopPage > div {
+.flex-ShopPage {
+  display: flex;
+  flex-wrap: wrap;
   background-color: none;
-  width:400px;
-  margin: 50px;
-  text-align: left;
-  line-height: 75px;
-  font-size: 30px;
-}  */
+  align-content: center;
+  justify-content: center;
+  columns: 2;
+}
 
-/* .flex-ShopPage > div {
+.flex-ShopPage > div {
   background-color: none;
-  width:400px;
+  width:200px;
   margin: 50px;
-  margin-left: auto;
   text-align: left;
-  line-height: 75px;
-  font-size: 30px;
-} */
+  line-height: 30px;
+  font-size: 20px;
+  font-family: Arial;
+  font-size: large;
+  /* align-items: absolute; */
+}
+
+/* Flex for Shopping CART BUTTON */
+
+.flex-ShopCheckout {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-content: right; */
+  justify-content: right;
+  float: inline-end;
+  width: 600px;
+}
+
+.flex-ShopCheckout > div {
+  background-color: none;
+  width:200px;
+  margin: 50px;
+  line-height: 30px;
+  font-size: 20px;
+  font-family: Arial;
+  font-size: large;
+}
