@@ -15,8 +15,12 @@
 
 .right {
   text-align: right;
-  padding-right: 200px;
 }
+
+/* .right-checkout {
+  text-align: right;
+  padding-right: 200px;
+} */
 
 h1 {
   text-align: center;
