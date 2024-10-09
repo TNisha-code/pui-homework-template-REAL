@@ -1,0 +1,385 @@
+.spaced {
+  margin-left: 10px;
+  /* Add space to cart button */
+}
+
+.center {
+  text-align: center;
+  align-items: center;
+}
+
+/* Text Align :left */
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  font-family: Arial;
+}
+
+
+h2 {
+  font-size: x-large;
+  font-weight: bold;
+  display: inline-block;
+  padding-right: 50px;
+  margin-inline: 20px;
+  font-family: Arial;
+}
+
+mark {
+  background-color: yellow;
+}
+
+/* Navigation horizontal bar for logo */
+.link-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+}
+
+.link-wrapper:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+  left: 0;
+  left: 420px;
+  height: 5px;
+  width: 100%;
+  background: black;
+}
+
+.link-wrapper a:not(:last-child) {
+  margin-right: 5px;
+}
+
+.link-wrapper img {
+  display: block
+}
+
+/* Link wrapper HR end */
+
+.pgimage {
+  width: 285px;
+  height: 285px;
+  border-style: solid;
+  border-color: black;
+}
+
+/* .img-text {
+  margin-left: 10px; 
+} not working (yet)*/
+
+.detailsimage {
+  width: 600px;
+  height: 600px;
+  border-style: solid;
+  border-color: black;
+  align-items: center;
+  /* margin-left: 100px; */
+}
+
+.cartimage {
+  width: 200px;
+  height: 200px;
+  border-style: solid;
+  border-color: black;
+}
+
+
+div.a {
+  display: block;
+  text-align: left;
+  color: black;
+
+}
+
+.Bunlogo {
+  width: 400px;
+  text-align: left;
+}
+
+/* unvisited link */
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+  font-weight: bold;
+  text-decoration: solid;
+  background-color: yellow;
+}
+
+/* selected link */
+a:active {
+  color: black;
+  text-decoration: none;
+}
+
+hr.line {
+  width: 80%;
+  border-bottom: 1px solid black;
+}
+
+.button {
+  background-color: yellow;
+  border-style: solid;
+  border-color: black;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.caption {
+  padding: 10px 0px;
+  display: block;
+  text-align: left;
+}
+
+/* Flex for image gallery */
+.flex-ImageGallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  /* background: #efefef; */
+}
+
+.content {
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  justify-content: center;
+  box-sizing: border-box;
+  /* background-color: blue; */
+  align-items: left;
+}
+
+/* Flex for details PAGE */
+.flex-DETAILSPage {
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: none; */
+  align-content: center;
+  justify-content: center;
+  columns: 2;
+}
+
+.flex-DETAILSPage>div {
+  /* background-color: none; */
+  width: 400px;
+  margin: 50px;
+  text-align: left;
+  line-height: 75px;
+  font-size: 30px;
+  /* align-items: absolute; */
+
+}
+
+.abbrv {
+  font-size: 28px;
+  text-align: left;
+  font-family: Arial;
+}
+
+/* Flex for cart PAGE */
+.flex-CartPage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  /* background-color: none; */
+  /* align-content: center; */
+  justify-content: center;
+}
+
+.flex-CartPage>div {
+  /* background-color: none; */
+  width: 400px;
+  margin: 50px;
+  /* margin-left: auto; */
+  text-align: left;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+/* Flex for Shopping PAGE */
+
+.flex-ShopPage {
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: none; */
+  align-content: center;
+  justify-content: center;
+  columns: 2;
+}
+
+.flex-ShopPage>div {
+  /* background-color: none; */
+  width: 200px;
+  margin: 50px;
+  text-align: left;
+  line-height: 30px;
+  font-size: 20px;
+  font-family: Arial;
+  font-size: large;
+}
+
+/* Flex for Shopping CART BUTTON */
+
+.flex-ShopCheckout {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-content: right; */
+  justify-content: right;
+  float: inline-end;
+  width: 600px;
+}
+
+.flex-ShopCheckout>div {
+  /* background-color: none; */
+  width: 200px;
+  margin: 50px;
+  line-height: 30px;
+  font-size: 20px;
+  font-family: Arial;
+  font-size: large;
+}
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Cart item styles */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Center the images */
+.cart-item img {
+  width: 100px;
+  /* Adjust size as needed */
+  height: auto;
+  margin-right: 20px;
+  display: block;
+  margin-left: auto;
+  /* Center the image */
+  margin-right: auto;
+  /* Center the image */
+}
+
+/* Item details and price */
+.item-details {
+  text-align: right;
+  /* Right-align text for item details */
+  flex-grow: 1;
+}
+
+.item-price {
+  text-align: right;
+  min-width: 100px;
+  /* Ensures price area is consistent */
+}
+
+.remove-button {
+  margin-left: 10px;
+}
+
+/* Flexbox for checkout section */
+.flex-ShopCheckout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Cart Images */
+.cart-item-wrapper {
+  position: relative;
+}
+
+.cart-item-wrapper:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background: black;
+}
+
+.cartimage {
+  width: 200px;
+  height: 200px;
+  border-style: solid;
+  border-color: black;
+}
+
+.cart-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.item-details {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.item-price {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.separator {
+  width: 100%;
+  border: 0;
+  height: 2px;
+  background: black;
+  margin: 20px 0;
+}
+
+/* wrap for cart images */
+.cart-items-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
