@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <title>Task Tracker</title>
+</head>
+
+<body>
+
+    <div id="filterButtons" class="filter-buttons">
+        <div id="charts">
+            <h2>Task Filtering</h2>
+            <div id="filterButtons"></div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h1>Task Tracker</h1>
+        <input type="text" id="taskInput" placeholder="Add a new task">
+        <select id="prioritySelect">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
+        <button id="addTaskButton">Add Task</button>
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="JavaScript/script.js"></script>
+</body>
+
+</html>

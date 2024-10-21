@@ -1,4 +1,4 @@
-// MDN and W3 review ref
+// MDN and W3 review ref //
 document.addEventListener('DOMContentLoaded', function() {
     const links = document.querySelectorAll('.flex-ImageGallery a');
 
