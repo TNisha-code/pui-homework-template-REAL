@@ -125,7 +125,7 @@ Remember to keep track of your prompts and usage for [FP4 writeup](#part-6-gener
 
 ## Project Description
 
-Project management tools are essential for organizing tasks, tracking progress, and meeting deadlines. They enhance collaboration and streamline workflows. The goal of this prototype is to create easy-to-use tool that help beginners manage their projects effectively.
+Project management tools are important for organizing tasks, tracking progress, and meeting deadlines. They enhance collaboration and streamline workflows. The goal of this prototype is to create easy-to-use tool that help beginners manage their projects effectively.
 
 
 ## High-Fi Prototypes
@@ -147,14 +147,14 @@ Users preferred the filtering option because it made managing tasks a lot easier
 
 However, some users felt that the Project Milestone Tracker could be overwhelming. When too many milestones were displayed at once, it created confusion and made it hard to see what was most important.
 
-Additionally, participants were curious about privacy settings. They wanted to know if the board would be private or if it could be shared with others. This feedback shows that users are looking for clarity on collaboration features and a more streamlined way to manage their tasks without feeling lost. By addressing these points, I can make the tool more user-friendly and effective.
+Additionally, participants were curious about subtask and privacy settings. They wanted to know if the board would be private or if it could be shared with others. This feedback shows that users are looking for clarity on collaboration features and a more streamlined way to manage their tasks without feeling lost. By addressing these points, I can make the tool more user-friendly and effective.
 …
 
 ## Usability Test
 
 Usability Test 
 
-I defined the main goals for the usability test. I wanted to learn how new users interacted with the tool and identify any challenges they might face. I briefed the evaluators on the overall goal of the project management tool, explaining its purpose and the key features. This included details about how users can create tasks and set priorities, helping them understand what to expect during the test.
+When I defined the main goals for the usability test, I wanted to learn how new users interacted with the tool and identify any challenges they might face. I briefed the evaluators on the overall goal of the project management tool, explaining its purpose and the key features. This included details about how users can create tasks and set priorities, helping them understand what to expect during the test.
 
 Usability Test
 
