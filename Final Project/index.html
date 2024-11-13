@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/styles.css">
     <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src='https://d3js.org/d3.v4.min.js'></script>
     <title>Task Tracker</title>
 </head>
 
@@ -17,25 +18,25 @@
         </div>
         <div class="input-container">
             <input type="text" id="taskInput" placeholder="Add a new task">
+            <input type="date" id="dueDateInput">
             <select id="prioritySelect">
                 <option value="low">Low</option>
                 <option value="medium">Medium</option>
                 <option value="high">High</option>
             </select>
-            <input type="date" id="dueDateInput">
             <button id="addTaskButton">Add Task</button>
         </div>
         <ul id="taskList"></ul>
     </div>
 
-    <div class="tree-container">
+    <!-- <div class="tree-container">
         <svg id="treeGraphic" width="200" height="200" viewBox="0 0 200 200" style="display: none;">
             <!-- Seed -->
-            <circle id="seed" cx="100" cy="150" r="10" fill="brown" />
-            <!-- Tree -->
-            <path id="tree" d="M100 150 L100 50 C80 30, 120 30, 100 50 Z" fill="green" style="opacity: 0;" />
-        </svg>
-    </div>
+    <circle id="seed" cx="100" cy="150" r="10" fill="brown" />
+    <!-- Tree -->
+    <path id="tree" d="M100 150 L100 50 C80 30, 120 30, 100 50 Z" fill="green" style="opacity: 0;" />
+    </svg>
+    </div> -->
 
 
     <script src="JavaScript/script.js"></script>

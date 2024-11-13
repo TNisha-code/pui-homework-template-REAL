@@ -30,12 +30,22 @@ h1 {
 
 .input-container {
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
     align-items: center;
+    justify-content: center;
     margin-bottom: 20px;
 }
 
-input[type="text"],
+input[type="text"] {
+    flex-grow: 1;
+    /* Allows the input to expand and take up more space */
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1em;
+    /* Slightly larger font for readability */
+}
+
 input[type="date"],
 select {
     padding: 12px;
@@ -165,6 +175,7 @@ li span {
     /* Lift effect */
 }
 
+
 /* Tooltip styling */
 .priority-low:hover::after,
 .priority-medium:hover::after,
@@ -197,4 +208,14 @@ li span {
 #seed {
     transition: transform 1s;
     /* Smooth transition for the seed */
+}
+
+/* Style for subtasks */
+.subtask-item {
+    margin-left: 20px;
+    /* Indent subtasks */
+    font-size: 0.9em;
+    /* Slightly smaller font for subtasks */
+    color: #6c757d;
+    /* Lighter color for subtasks */
 }
