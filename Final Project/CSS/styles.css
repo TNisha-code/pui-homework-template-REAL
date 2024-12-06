@@ -173,6 +173,32 @@ button:active {
     transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
+/* Media query for small screens (like mobile devices) */
+@media (max-width: 768px) {
+    button {
+        width: 100%;
+        /* Makes buttons take full width on smaller screens */
+        padding: 10px;
+        /* Adjust padding for smaller screens */
+        font-size: 16px;
+        /* Adjust font size */
+        margin: 5px 0;
+        /* Adjust margin for stacked layout */
+    }
+}
+
+/* For very small screens (like very narrow mobile screens) - higher buttons */
+@media (max-width: 480px) {
+    button {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+        margin: 3px 0;
+    }
+}
+
+
+
 ul {
     list-style-type: none;
     padding: 0;
@@ -267,7 +293,6 @@ li span {
     /* Lift effect */
 }
 
-
 /* Tooltip styling */
 .priority-low:hover::after,
 .priority-medium:hover::after,
@@ -285,22 +310,6 @@ li span {
     transform: translateX(-50%) translateY(-100%);
 }
 
-.tree-container {
-    text-align: center;
-    /* Center the SVG horizontally */
-    margin-top: 20px;
-    /* Add some space above */
-}
-
-#tree {
-    transition: opacity 1s ease-in;
-    /* Smooth transition for the tree */
-}
-
-#seed {
-    transition: transform 1s;
-    /* Smooth transition for the seed */
-}
 
 /* Style for subtasks */
 .subtask-item {
