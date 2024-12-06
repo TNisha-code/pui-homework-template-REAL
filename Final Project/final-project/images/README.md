@@ -11,43 +11,85 @@ Feel free to refer to this [Markdown Cheat Sheet](https://www.markdownguide.org/
 
 ## Part 1: Website Description
 
-Describe your website (300 words).
+My website introduces a novel project management tool inspired by the simplicity and effectiveness of sticky notes. This idea came from a need I observed among new project managers: an easy way to capture action items and tasks during meetings without feeling overwhelmed. Designed with beginners in mind, this digital solution captures the convenience of physical sticky notes while addressing their common shortcomings, such as falling off surfaces or getting misplaced, and makes the process more efficient.
 
-* What is the purpose of your website?   
-* Who is the target audience?  
-* What information do you convey with your website?   
-* How is it interesting and engaging? 
+The purpose of my website is to showcase this tool as the ideal way to manage quick tasks and meeting notes, ensuring nothing important slips through the cracks. Unlike traditional sticky notes, these digital stickies are always accessible and can be refreshed daily to maintain a clean, focused workspace. The tool is designed for use on tablets and laptops, making it perfect for project managers on the go. The system is also intuitive, allowing new users to adopt it quickly and easily.
+
+The target audience includes new project managers, team leads, freelancers, and anyone who needs a reliable, organized system for managing tasks in real time. By focusing on simplicity and accessibility, this tool empowers users to stay on top of their responsibilities without the steep learning curve of more complex project management systems. Its customizable features make it adaptable to different workflows, offering users the flexibility they need.
+
+This project is currently focused on solving the most immediate challenges for new project managers. Given more time, I would like to enhance the tool with additional features, such as advanced organization options, reminders, and ways to easily share tasks with teammates. These improvements would make the tool even more versatile and collaborative, further supporting project managers in their daily responsibilities.
+
+By addressing the needs of new project managers with a simple and effective approach, this tool lays the foundation for a more organized and productive workflow, with the potential to grow into a streamlined solution for a larger audience.
+
+I enjoyed building it and sort of wish we started at the begining of the year, so that there was more time to refine it and take it even further.
 
 ## Part 2: User Interaction
 
-How a user would interact with your website? For each step, briefly but clearly state the interaction type & how we should reproduce it.
 
-1. Interaction type. Click on X on page Y / scroll on page X, etc.  
-2. 
+1.  Click on "Add a task" field: 
+* Interaction type: Click on the task input field.
+* How to reproduce: The user will click the "Add a task" text box to begin typing the task description.
+2. Enter task text and select a due date:
+* Interaction type: Type in the text field and select a due date from a date picker.
+*   How to reproduce: The user will type the task description and then click on a calendar icon to choose, a priority or due date (if needed) from a pop-up calendar.
+3. Click on the "+ icon" to add a subtask:
+* Interaction type: Click on the “+” icon next to a task.
+* How to reproduce: Once a task is created, the user clicks the small “+” icon next to the task to open a subtask input field.
+4. Check the box to mark the task as completed:
+* Interaction type: Click on a checkbox beside the task.
+* How to reproduce: The user clicks a checkbox next to a task to mark it as completed, which can then be filtered by the ALl, Comepleted and Pending filter buttons.
+5. Click on the trash icon to delete a task:
+* Interaction type: Click on the trash icon next to a task.
+* How to reproduce: The user clicks the trash icon on the right side of the task to delete it. 
 
 ## Part 3: External Tool
 
 Describe what important external tool you used (JavaScript library, Web API, animations, or other). Following the bulleted list format below, reply to each of the prompts.
 
-1. Name of tool1  
-   * Why did you choose to use it over other alternatives? (2 sentences max)  
-   * How you used it? (2 sentences max)  
-   * What does it add to your website? (2 sentences max)  
-2. Name of tool2
+1. CSS Animations (Background Animation and Popup Animation)
+
+   * Why did you choose to use it over other alternatives? I chose CSS animations for their simplicity and ability to create engaging effects without needing external libraries. These animations provide visual appeal and improve the user experience.
+   * How you used it? I used CSS animations to create a smooth background gradient shift using the @keyframes rule and to animate the popup content with a sliding effect. These animations are triggered when the page loads and when the popup is displayed.
+   * What does it add to your website? The animations add a dynamic visual experience that enhances the aesthetic appeal of the website. The animated gradient background creates a calm, visually engaging effect, while the popup animation adds a smooth transition for user interaction.
+
+2. Font Awesome
+   * Why did you choose to use it over other alternatives? Font Awesome was chosen because it has a lot of useful icons and integrated easily into the code to enhance the overall design. 
+
+   * How you used it? I used Font Awesome to include icons such as the trash can and checkmark icons, which enhance task interaction (e.g., deleting or completing tasks). These icons are easily integrated by linking the Font Awesome CDN.
+
+   * What does it add to your website? Font Awesome adds visual clarity to the task management interface with recognizable icons for pm users. 
 
 ## Part 4: Design Iteration
 
-Describe how you iterated on your prototypes, if at all, including any changes you made to your original design while you were implementing your website and the rationale for the changes. (4-8 sentences max)
+During the development of my website, I iterated on the design based on feedback from other students and in lab testing. One key change came after testing usability on iPads and laptops, which revealed the need to optimize for both devices, ensuring the animations and layout were responsive. 
+
+I also considered removing the dropbox feature, as it was deemed unnecessary, streamlining the interface. In response to feedback, I experimented with different fonts and styling to improve readability and aesthetic appeal, and I explored using a more generic trashcan icon for deleting items, potentially creating a custom one in Illustrator. 
+
+Additionally, I adjusted the buttons for better contrast to enhance accessibility. Given the time constraints, I added a pre-loading screen with instructions as students said it might help new Project Managers, though I implemented temporary storage to prevent it from appearing too often. 
+
+These changes were all made with the goal of creating a more intuitive and visually cohesive site, based on both user testing and feedback.
 
 ## Part 5: Implementation Challenge
 
-What challenges did you experience in implementing your website? (2-4 sentences max)
+* I switched from jQuery to CSS animations for better performance and simplicity.
+* CSS transitions had limits for complex interactions, so I rethought how to trigger animations.
+* I decided whether to keep the dropbox and worked on balancing interactive elements, fonts, and button styles.
 
 ## Part 6: Generative AI Use and Reflection
 
-Describe how you used Generative AI tools to create this final project (fill in the following information, write \~500 words in total).
+  For my project, I used ChatGPT AI tools on and off, depending on what I was working on. I often asked the AI for examples or guidance when I needed it, but I also liked to dive in and figure things out myself. I wanted to understand how everything fit together, so I experimented through trial and error. When I hit a wall, though, the AI was super helpful in pointing me in the right direction. The goal of my project is to create a welcoming entry point for new project managers who might feel overwhelmed by traditional project management software. 
+  For the design of the website, I used AI tools to help troubleshoot CSS issues when things weren’t working correctly. Since the tool was going to be used primarily on tablets and laptops, it was crucial that the design worked well across those devices. The AI helped me with suggestions on color schemes and button placements, which were helpful since I was often working alone and needed another perspective. 
+  
+  Once I had some suggestions from the AI, I took a hands-on approach and experimented with different layouts and button styles. This trial-and-error process was essential for me to understand UI/UX design principles and how users would interact with the tool. The tool’s design is high-contrast color schemes, and simple keyboard navigation to make it easier for users with visual impairments.
+   
+  For coding, I turned to the AI to point me to website or snippets to learn more about  functionality like changing the background color and animations. At first, I used jQuery for the animations, but then switched to CSS animations, which turned out to be much more straightforward. When I got stuck I asked the AI to provide examples and how certain components worked, I spent a lot of time on trial and error to make sure everything worked properly and that I understood how the different components interacted.
+  
+  As the tool focuses on simplicity and ease of use, I kept the code clean and straightforward to ensure the system was efficient and easy to maintain. When I wasn't sure if two pieces of code were clashing I would ask for guidance from the AI to optimize the code to make sure the website ran smoothly. 
+  
+  After I had a basic design in place, I tried the website on iPads. The feedback I got from students and users helped me adjust the layout so everything looked good and worked well on both tablets and laptops. The design needed to be responsive, so I made sure it didn’t break when viewed on these two screen sizes. I asked the ai about sizing recommendations and the AI pointed out some issues, like too small text size for tablets, and that was a huge help. By fixing these small problems early, I was able to make the site more user-friendly and visually accessible.
+  
+  In the end, combining my hands-on approach with the AI tools helped me build a simple, functional, and user-friendly project management tool. The new project task sticky tool focuses on offering an accessible experience for new project managers, helping them stay organized without the overwhelming complexity of traditional software. By emphasizing simplicity, and accessibility, this tool improves the project management process, making it a more straightforward and enjoyable experience. Moving forward, I plan to the AI as a sounding board for new ideas and testing new libraries to add more features and improve the tool, especially as I work on making it even more interactive and collaborative for users.
 
-Document your use of all GenAI tools — ChatGPT, Copilot, Claude, Cursor, etc. using the template below. Add/Delete rows or bullet points if needed, and replace Tool1/Tool2 with the name of the tool.
 
 ### Usage Experiences by Project Aspects
 
@@ -59,8 +101,8 @@ For the following aspects of your project, edit the corresponding table cell to 
 
 | Tool Name | Ratings | design | plan | write code | debug | \_ (other?) |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
-| Tool1 | Usage | Yes/No | Yes/No | Yes/No | Yes/No | Yes/No |
-| Tool1 | Productivity | 1~7 | 1~7 | 1~7 | 1~7 | 1~7 |
+| ChatGPT | Usage | Yes/No | No | Yes | Yes | N/A |
+| ChatGPT | Productivity | 5 | 0 | 6 | 7 | 0 |
 | Tool2| Usage | Yes/No | Yes/No | Yes/No | Yes/No | Yes/No |
 | Tool2 | Productivity | 1~7 | 1~7 | 1~7 | 1~7 | 1~7 |
 
@@ -69,31 +111,32 @@ For the following aspects of your project, edit the corresponding table cell to 
 
 > Impact on your design and plan 
 * It matched my expectations and plan in [FP2](#generative-ai-use-plan) in that … For example, 
-  1. Tool1: 
-  2. Tool2:
+  1. ChatGPT: I did not need a complex library to create cohesive animations
+  2. I planned to use the AI tool as a reference which was helpful.
 * It did not match my expectations and plan in [FP2](#generative-ai-use-plan) in that … For example, 
-  1. Tool1: 
-  2. Tool2:
+  1. The AI tool works as I thought it would. Although I used users/students for more visual and workflow quesitons.
+  2. I did not have any expectations issues.
 * GenAI tool did/did not influence my final design and implementation plan because … For example, 
-  1. Tool1: 
-  2. Tool2:
+  1. The AI did not influence my designs as most of the desining was done away from my computer when interviewing folks and colelcting user feedback.
+  2. The AI enriched and helped me when I got stuck.
 
 > Use patterns
 * I accepted the generations when …  For example, 
-  1. Tool1: this tool once suggested … and I adjusted my design according to the suggestion because … 
-  2. Tool2: 
+  1. When I encountered conflicting code, I would consult the AI tool and also cross-reference with online resources.
+  2. For example, I ran into an issue with JavaScript where the event listeners weren't working as expected. After spending several hours debugging, I asked the AI tool for advice, and it quickly pointed out that I had a syntax error.
+
 * I critiqued/evaluated the generated suggestions by … For example, 
-  1. Tool1: this tool once suggested … but I modified/rejected the suggestion because … 
-  2. Tool2: 
+  1. I evaluated the AI-generated suggestions based on how well they aligned with my design and learning goals.
+  2. For instance, when the AI suggested merging the script for two buttons to improve efficiency, I decided not to follow it. I felt that keeping them separate would help me stay more organized, especially since I’m still learning. So, I chose not to prioritize efficiency in this case.
 
 
 > Pros and cons of using GenAI tools
 * Pros
-  1. Tool1: 
-  2. Tool2:
+  1. Support when debugging
+  2. Providing answer to syntax questions while learning
 * Cons
-  1. Tool1: 
-  2. Tool2:
+  1. Must not be taken at face value and should be compared with other sources as the first answer is not always the best or right answer
+  2. Should have aplan first as AI tool may not understand the overall goals
 
 
 ### Usage Log
@@ -103,21 +146,44 @@ Document the usage logs (prompts and chat history links) for the GenAI tools you
 1. [ChatGPT](https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq) / [Gemini](https://support.google.com/gemini/answer/13743730?hl=en&co=GENIE.Platform%3DDesktop): share the anonymous link to all of your chat histories relevant to this project
 2. [GitHub Copilot (VSCode)](https://code.visualstudio.com/docs/copilot/copilot-chat#:~:text=You%20can%20export%20all%20prompts%20and%20responses%20for%20a%20chat%20session%20in%20a%20JSON%20file%20with%20the%20Chat%3A%20Export%20Session...%20command%20(workbench.action.chat.export)%20in%20the%20Command%20Palette.): export chat histories relevant to this project.
 
+- I checked, and I didn't have save turned on for ChatGPT. Let me know if you'd like me to recreate any of the questions I can remember.
+
+
 ---
 
 # **FP3 \- Final Project Check-in**
 
-Document the changes and progress of your project. How have you followed or changed your implementation & GenAI use plan and why? Remember to commit your code to save your progress.
+Throughout the project, I followed my initial implementation plan, utilizing tools as needed if I got stuck for questions. The AI was particularly helpful for resolving syntax issues, providing quick solutions when I encountered errors or needed clarification. While the overall plan remained consistent, I adapted based on the AI's ability to troubleshoot and direct me to more reading/webesites. I also made sure to commit my code and ensure that changes were documented.
 
 ## Implementation Plan Updates
 
-- [ ] ...
+- Testing Usability on iPads and Laptops:
+Focus on testing the application across common devices like iPads and laptops to ensure the interface is responsive, functional, and user-friendly on these platforms.
+- Animations:
+Implement subtle animations to enhance user interaction, particularly with buttons, task additions, and popups. Ensure animations do not interfere with usability.
+- Streamlining Features:
+Consider removing the dropdown (possibly the priority selection dropdown) if it’s determined to be unnecessary for the task-tracking process, simplifying the user interface.
+- Font and Styling Updates:
+Experiment with different fonts and styling elements to improve the visual appeal and readability, aiming for a clean, modern design.
+- New Delete Icon:
+Replace the current delete icon with a more recognizable design, such as a generic trash can, possibly created in Illustrator for custom styling.
+- Button Contrast Adjustments:
+Experiment with button designs and colors to ensure good contrast and visibility, improving accessibility and user experience.
+- Pre-Loading Screen (Time Permitting):
+If time allows, implement a pre-loading screen that provides instructions for users on how to navigate the app, using temporary storage to ensure it doesn’t show repeatedly.
 
 ## Generative AI Use Plan Updates
 
-- [ ] ...
+- Used generative AI for advice and clarifications on best practices when I was unsure about certain JavaScript functions I iplemented and didn't work the first few tries.
+
+- Used AI to check my code's functionality as I tested different parts or pulled samples from W3 sources.
+
+- Overall AI was a helpful tool for learning new techniques as I reviewed inclass lecture notes, providing quick answers to specific questions about coding conflicts or syntax.
+
 
 Remember to keep track of your prompts and usage for [FP4 writeup](#part-6-generative-ai-use-and-reflection).
+
+- I checked, and I didn't have save turned on for ChatGPT. Let me know if you'd like me to recreate any of the questions I can remember.
 
 ---
 
