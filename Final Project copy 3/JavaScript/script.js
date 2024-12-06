@@ -1,18 +1,3 @@
-// Check if the popup has been shown before
-if (!localStorage.getItem('popupShown')) {
-    // If not, show the popup and set a flag in localStorage - delete in Inspector for testing
-    window.onload = function() {
-        document.getElementById('popup').style.display = 'flex';
-        localStorage.setItem('popupShown', 'true');
-    };
-}
-
-function closePopup() {
-    document.getElementById('popup').style.display = 'none';
-}
-
-
-
 let taskCounter = 1; // Initialize task counter
 let tasks = []; // Store tasks
 let currentFilter = 'all'; // Store current filter
@@ -28,7 +13,6 @@ function addTask() {
     const taskText = taskInput.value.trim(); // Get task text
     const priority = prioritySelect.value; // Get selected priority
     const dueDate = dueDateInput.value; // Get due date
-
 
     // Prevent adding empty tasks
     if (taskText === '') return;
@@ -49,6 +33,7 @@ function addTask() {
     prioritySelect.value = 'low'; // Reset priority
     dueDateInput.value = ''; // Clear due date
 }
+
 function renderTasks() {
     const taskList = document.getElementById('taskList'); // Get task list container
     taskList.innerHTML = ''; // Clear existing tasks
@@ -56,23 +41,20 @@ function renderTasks() {
     tasks.forEach(task => {
         if (shouldRenderTask(task)) {
             // Create the main task list item
-            const li = document.createElement('li'); // Main task item & adds delete icon from Font Awesome! (yay it worked)
+            const li = document.createElement('li'); // Main task item
             li.innerHTML = `
                 <input type="checkbox" onclick="toggleCompletion(${task.id}, this)" ${task.completed ? 'checked' : ''}>
                 <span class="priority-${task.priority}" title="${getPriorityDescription(task.priority)}">
                     ${task.id}. ${task.text} (Priority: ${task.priority.charAt(0).toUpperCase() + task.priority.slice(1)}) - Due: ${task.dueDate}
                 </span>
-                <button class="delete-button" onclick="removeTask(${task.id})">
-                    <i class="fas fa-trash"></i>
-                </button>
+                <button class="delete-button" onclick="removeTask(${task.id})">Delete</button>
+                
                 <!-- Subtask list container -->
                 <ul id="subtaskList-${task.id}"></ul> 
                 
-                <!-- Subtask input field and add font awesome button -->
+                <!-- Subtask input field and add button -->
                 <input type="text" id="subtaskInput-${task.id}" placeholder="Add a subtask">
-                <button onclick="addSubtask(${task.id})">
-                <i class="fa-solid fa-plus"></i>
-                </button>
+                <button onclick="addSubtask(${task.id})">Add Subtask</button>
             `;
 
             taskList.appendChild(li); // Add main task item to the task list
@@ -85,7 +67,6 @@ function renderTasks() {
         showTree(); // Show the tree if all tasks are completed
     }
 }
-
 
 // Function to determine if a task should be shown based on the current filter
 function shouldRenderTask(task) {
@@ -165,9 +146,7 @@ function renderSubtasks(taskId) {
         li.innerHTML = `
             <input type="checkbox" onclick="toggleSubtaskCompletion(${taskId}, '${subtask.id}', this)" ${subtask.completed ? 'checked' : ''}>
             <span>${subtask.text}</span>
-           <button class="delete-button" onclick="removeTask(${task.id})">
-                    <i class="fas fa-trash"></i>
-                </button>
+            <button onclick="removeSubtask(${taskId}, '${subtask.id}')">Delete</button>
         `;
         subtaskList.appendChild(li); // Add subtask item to subtask list
     });
@@ -206,4 +185,20 @@ function checkAllTasksCompleted() {
     return tasks.every(task => task.completed); // Check if all tasks are completed
 }
 
+// // Function to show the tree
+// function showTree() {
+//     const treeGraphic = document.getElementById('treeGraphic');
+//     const seed = document.getElementById('seed');
+//     const tree = document.getElementById('tree');
 
+//     // Show the SVG graphic
+//     treeGraphic.style.display = 'block';
+
+//     // Animate the seed to sprout into a tree
+//     seed.style.transform = 'translateY(-50px) scale(0.5)'; // Move seed up and shrink
+
+//     setTimeout(() => {
+//         seed.style.opacity = '0'; // Fade out the seed
+//         tree.style.opacity = '1'; // Fade in the tree
+//     }, 1000); // Wait for seed animation to finish
+// }

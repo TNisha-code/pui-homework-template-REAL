@@ -1,86 +1,5 @@
-/* Creates the full-page background animation */
 body {
-    background: linear-gradient(-45deg, #ced4da, #b0c4d2, #6a9dd4, #0056b3);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-    height: 100vh;
-}
-
-/* Defines the background animation */
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-/* End of Animated Background */
-
-
-/* Popup container styles */
-.popup {
-    display: none;
-    /* Initially hidden */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Semi-transparent background */
-    z-index: 1000;
-    /* Make sure it's on top of other content */
-}
-
-.popup-content {
-    position: relative;
-    background-color: white;
-    padding: 20px;
-    width: 300px;
-    /* Set width for popup */
-    border-radius: 8px;
-    text-align: center;
-    animation: slideUp 0.5s ease-out;
-    margin: auto;
-    top: 20%;
-    /* Center vertically */
-}
-
-/* Textbox and input fields inside popup */
-.popup-content input,
-.popup-content textarea {
-    width: 80%;
-    /* Adjust width of input fields */
-    margin: 10px 0;
-    padding: 8px;
-    font-size: 14px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-.popup-disclosure {
-    color: #010101;
-    /* Change text color */
-    font-style: italic;
-    font-size: 11px;
-    /* Adjust font size */
-    font-weight: bold;
-    /* Make text bold */
-    padding: 10px;
-    /* Add padding around text */
-
-}
-
-
-body {
-    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #e9ecef;
     /* Lighter background for contrast */
     margin: 0;
@@ -88,11 +7,11 @@ body {
 }
 
 .container {
-    max-width: absolute;
+    max-width: 600px;
     margin: auto;
     padding: 20px;
-    background: #fff58b;
-    /* yelllow background for the container */
+    background: #ffffff;
+    /* White background for the container */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     /* Deeper shadow for depth */
     border-radius: 10px;
@@ -108,7 +27,6 @@ h1 {
     font-size: 2.5em;
     /* Larger font size */
 }
-
 
 .input-container {
     display: flex;
@@ -146,11 +64,11 @@ select:focus {
     /* Remove outline */
 }
 
-/* Button default styling */
 button {
     padding: 12px 20px;
-    margin: 10px;
+    margin-top: 10px;
     background-color: #007BFF;
+    /* Vibrant blue for buttons */
     color: white;
     border: none;
     border-radius: 5px;
@@ -158,19 +76,11 @@ button {
     transition: background-color 0.3s, transform 0.2s;
 }
 
-/* Hover effect - lifts a little on hover */
 button:hover {
     background-color: #0056b3;
+    /* Darker blue on hover */
     transform: translateY(-2px);
-}
-
-/* Click effect - scaling effect on button clicking */
-button:active {
-    transform: scale(1.1);
-    /* Slightly enlarge the button */
-    background-color: #4f94d9;
-    /* Change the background color when clicked */
-    transition: transform 0.2s ease, background-color 0.2s ease;
+    /* Subtle lift effect */
 }
 
 ul {
@@ -213,7 +123,7 @@ li span {
 }
 
 .priority-medium {
-    color: #ac850e;
+    color: #ffc107;
     /* Yellow */
 }
 
@@ -233,7 +143,7 @@ li span {
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
-    background-color: #646565;
+    background-color: #17a2b8;
     /* Teal */
     color: white;
     cursor: pointer;
@@ -241,7 +151,7 @@ li span {
 }
 
 .filter-buttons button:hover {
-    background-color: #007BFF;
+    background-color: #138496;
     /* Darker teal on hover */
     transform: translateY(-2px);
     /* Lift effect */
@@ -251,13 +161,11 @@ li span {
     background-color: #dc3545;
     /* Red */
     color: white;
-    padding: 8px 15px;
+    padding: 8px 12px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
-    margin: 10px;
-    /* Added space around the delete button */
 }
 
 .delete-button:hover {
